@@ -1,5 +1,7 @@
 # Format number currency
 
+Tip to format number to currency using js
+
 ```js
 const number = 900000;
 
