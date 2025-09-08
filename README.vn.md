@@ -80,3 +80,6 @@ console.log(formatted);
 * **Thủ công:** chỉ khi bạn muốn học regex hoặc xử lý đơn giản, cố định (ví dụ chỉ hiển thị VND).
 * **`Intl.NumberFormat`:** gần như luôn nên dùng, đặc biệt với app thương mại điện tử, dashboard, hệ thống quốc tế.
 
+---
+
+**Kết luận**: Thay vì mất thời gian phát minh lại bánh xe, hãy tận dụng sức mạnh của Intl.NumberFormat để vừa tiết kiệm thời gian, vừa đảm bảo định dạng tiền tệ chính xác, linh hoạt cho từng vùng miền. Đây là bí quyết giúp bạn chuyên nghiệp hóa dự án của mình!
