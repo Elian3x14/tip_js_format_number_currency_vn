@@ -1,5 +1,6 @@
+<!--title-->
 # Formatting Numbers as Currency in JavaScript
-
+<!--/title-->
 When working with **prices, invoices, or revenue**, displaying numbers in a proper currency format makes your UI more readable and professional.
 
 In JavaScript, there are two common approaches:
