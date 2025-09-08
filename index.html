@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Currency Formatter Demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      padding: 5px;
+      margin-top: 5px;
+    }
+    .result {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h2>Currency Formatter Demo</h2>
+
+  <label>
+    Enter a number:
+    <input type="number" id="numberInput" value="900000" />
+  </label>
+
+  <label>
+    Choose a currency:
+    <select id="currencySelect">
+      <option value="VND" selected>VND - Vietnamese Dong</option>
+      <option value="USD">USD - US Dollar</option>
+      <option value="EUR">EUR - Euro</option>
+      <option value="JPY">JPY - Japanese Yen</option>
+    </select>
+  </label>
+
+  <div class="result" id="result"></div>
+
+  <script>
+    const numberInput = document.getElementById("numberInput");
+    const currencySelect = document.getElementById("currencySelect");
+    const result = document.getElementById("result");
+
+    function formatCurrency() {
+      const number = Number(numberInput.value);
+      const currency = currencySelect.value;
+
+      const formatted = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: currency,
+      }).format(number);
+
+      result.textContent = `Formatted: ${formatted}`;
+    }
+
+    numberInput.addEventListener("input", formatCurrency);
+    currencySelect.addEventListener("change", formatCurrency);
+
+    // Initial render
+    formatCurrency();
+  </script>
+</body>
+</html>
