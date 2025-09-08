@@ -80,4 +80,3 @@ console.log(formatted);
 * **Thủ công:** chỉ khi bạn muốn học regex hoặc xử lý đơn giản, cố định (ví dụ chỉ hiển thị VND).
 * **`Intl.NumberFormat`:** gần như luôn nên dùng, đặc biệt với app thương mại điện tử, dashboard, hệ thống quốc tế.
 
-Bạn có muốn mình thêm **một demo code sandbox (dùng HTML + JS nhỏ) cho phép người dùng nhập số và chọn loại tiền để xem kết quả trực tiếp** không?
