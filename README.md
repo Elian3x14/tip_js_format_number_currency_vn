@@ -5,12 +5,12 @@ When working with **prices, invoices, or revenue**, displaying numbers in a prop
 
 In JavaScript, there are two common approaches:
 
-1. **Manual formatting (error-prone, more work).**
-2. **Using `Intl.NumberFormat` (clean and international-ready).**
+**Manual formatting (error-prone, more work).**
+**Using `Intl.NumberFormat` (clean and international-ready).**
 
 ---
 
-## 1. Manual Approach
+## Manual Approach
 
 Many developers write a small function to insert thousand separators:
 
@@ -38,7 +38,7 @@ console.log(formatCurrencyManual(900000) + " ₫");
 
 ---
 
-## 2. Modern Approach with `Intl.NumberFormat`
+## Modern Approach with `Intl.NumberFormat`
 
 With just a few lines, you can get standardized results:
 
@@ -63,7 +63,7 @@ console.log(formatted);
 
 ---
 
-## 3. Quick Comparison
+## Quick Comparison
 
 | Criteria       | Manual Approach        | `Intl.NumberFormat` |
 | -------------- | ---------------------- | ------------------- |
@@ -74,7 +74,7 @@ console.log(formatted);
 
 ---
 
-## 4. When to Use Which?
+## When to Use Which?
 
 * **Manual approach:** only if you want to practice regex or handle very specific, fixed formats (e.g., always VND).
 * **`Intl.NumberFormat`:** recommended in almost all real-world applications — especially for e-commerce, dashboards, and international systems.
